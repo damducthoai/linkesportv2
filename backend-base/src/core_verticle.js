@@ -1,9 +1,9 @@
 class CoreVerticle {
-    constructor(name, globalConfig, moduleConfig, verticleConfig){
-        this.name = name || 'CoreVerticle'
-        this.globalConfig = globalConfig || {}
-        this.moduleConfig = moduleConfig || {}
-        this.verticleConfig = verticleConfig || {}
+    constructor(input){
+        this.name = input.name || 'CoreVerticle'
+        this.globalConfig = input.globalConfig || {}
+        this.moduleConfig = input.moduleConfig || {}
+        this.verticleConfig = input.verticleConfig || {}
     }
 }
 module.exports = CoreVerticle
